@@ -1,0 +1,575 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0f12;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar Section */
+
+.navbar {
+    background-color: #202125;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    box-shadow: 0 4px 15px rgba(49, 49, 49, 0.6);
+    border-bottom: 1px solid #252525;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+.logo {
+    color: #E5E8E4;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #bdc081;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #E5E8E4;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamburger:hover {
+    color: #E2D08E;
+}
+
+.nav-links {
+    color: #FFFFFF;
+}
+
+.nav-links a {
+
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0 15px;
+
+}
+
+.nav-links a:hover {
+    color: #8c877a;
+}
+
+.nav-btn {
+    text-decoration: none;
+    background-color: #E2D08E;
+    color: #111317;
+    padding: 7px 20px;
+    border-radius: 22px;
+    box-shadow: 0 4px 10px rgba(94, 93, 93, 0.6);
+}
+
+/* Header Section */
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('CafeImages/hero img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    color: #E5E8E4;
+
+}
+
+.hero-content {
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    right: 100px;
+    top: 15%;
+    left: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hero-title {
+    font-size: 55px;
+    margin-bottom: 20px;
+    color: #E5E8E4;
+}
+
+.hero-content p {
+    font-size: 17px;
+    margin-bottom: 30px;
+    color: #E5E8E4;
+}
+
+.hero-btn {
+
+    text-decoration: none;
+    background-color: #E2D08E;
+    color: #111317;
+    padding: 10px 30px;
+    border-radius: 22px;
+    box-shadow: 0 4px 10px rgba(94, 93, 93, 0.6);
+}
+
+/* About Section */
+
+.about {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0C0C0E;
+    color: #E5E8E4;
+    text-align: center;
+}
+
+.section-title {
+    margin-top: 40px;
+    line-height: 1.5;
+    font-size: 35px;
+    color: #E5E8E4;
+    /* text-align: center; */
+
+}
+
+.section-subtitle {
+    margin-bottom: 35px;
+    color: #E5E8E4;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-text h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.about-text p {
+    color: #a0a5b0;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Menu Section */
+
+.menu {
+
+    background-color: #0C0C0E;
+    padding: 10px 0 10px 0;
+    text-align: center;
+
+}
+
+
+.menu-grid {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    background-color: #202125;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+.menu-image {
+    margin-bottom: 10px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.menu-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.menu-price {
+    background-color: #E2D08E;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu-card-content {
+    text-align: left;
+}
+
+.menu-card-content h3 {
+    color: #E5E8E4;
+    font-weight: bold;
+}
+
+.menu-card-content p {
+    color: #a0a5b0;
+    font-size: 14px;
+}
+
+/* Gallery Section */
+
+.gallery {
+    background-color: #191A1E;
+    padding: 40px 0;
+    text-align: center;
+}
+
+
+.gallery-grid {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    gap: 10px;
+}
+
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+
+/* 1. Asymmetric Columns: Side boxes are standard width */
+.gallery-grid .gallery-item:first-child,
+.gallery-grid .gallery-item:last-child {
+    flex: 1;
+}
+
+/* 2. Asymmetric Columns: Center picture box stands out wider automatically! */
+.gallery-grid .gallery-item:nth-child(2) {
+    flex: 1.4;
+}
+
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.gallery-item:hover {
+    flex: 1.8 !important;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-grid:hover .gallery-item:not(:hover) img {
+    filter: brightness(0.35) grayscale(0.2);
+}
+
+/* Contact Detail Section */
+
+.contact {
+    background-color: #0A0C0D;
+    padding: 20px;
+}
+
+
+.contact-wrapper {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+
+.contact-wrapper h3 {
+    text-align: center;
+    color: #d2d5dc;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+
+.contact-info {
+    color: #bdc081;
+    background-color: #191A1E;
+    border-radius: 10px;
+    padding: 30px;
+    line-height: 2.2;
+    flex: 1;
+    min-width: 300px;
+}
+
+
+.contact-info p strong {
+    color: #d2d5dc;
+
+}
+
+
+.booking-form {
+    background-color: #191A1E;
+    border-radius: 10px;
+    padding: 30px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-row input,
+.form-row button {
+    flex: 1;
+}
+
+.booking-form input {
+    width: 100%;
+    margin: 0;
+    background-color: #202125;
+    border: 1px solid #E2D08E;
+    border-radius: 5px;
+    padding: 12px;
+    color: #E5E8E4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+
+.booking-form input:focus {
+    outline: none;
+    border-color: #524f46;
+}
+
+
+.booking-form button {
+    width: 100%;
+    margin: 0;
+    border: none;
+    background-color: #E2D08E;
+    color: #111317;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+.booking-form button:hover {
+    background-color: #d0c086;
+    color: #111317;
+    transform: translateY(-2px);
+}
+
+footer p {
+    background-color: #202125;
+    color: #bdc081;
+    text-align: center;
+    padding: 15px 0;
+    font-family: poppins, sans-serif;
+    font-size: 14px;
+
+}
+
+.nav-btn,
+.hero-btn,
+.booking-form button {
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover,
+.hero-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(226, 208, 142, 0.25);
+}
+
+
+
+/* 1. TABLET PORTRAIT VIEWPORT BREAKPOINT */
+@media (max-width: 992px) {
+    .menu-card {
+        width: 45%;
+    }
+
+    .hero-content {
+        right: 5%;
+        left: 5%;
+        top: 20%;
+        width: 90%;
+    }
+}
+
+/* 2. SMARTPHONE VIEWPORT BREAKPOINT */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 12px 20px;
+        flex-direction: row;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        color: #E5E8E4;
+        font-size: 30px;
+        cursor: pointer;
+        padding: 5px;
+        order: 2;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #202125;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 15px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .nav-btn {
+        display: block;
+        order: 1;
+        font-size: 13px;
+        padding: 8px 15px;
+    }
+
+
+    .hero {
+        height: 70vh;
+    }
+
+    .hero-content {
+        position: relative;
+        right: auto;
+        left: auto;
+        top: auto;
+        padding: 60px 20px;
+    }
+
+    .hero-title {
+        font-size: 38px;
+    }
+
+
+    section,
+    .about,
+    .menu,
+    .gallery,
+    .contact {
+        padding: 60px 20px;
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+
+    .menu-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+
+    .gallery-grid {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .gallery-item {
+        width: 100%;
+        height: 250px;
+    }
+
+    .gallery-grid .gallery-item:nth-child(2) {
+        flex: 1;
+    }
+
+    .gallery-item:hover {
+        flex: 1 !important;
+    }
+
+
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-info,
+    .booking-form {
+        width: 100%;
+        min-width: 100%;
+        padding: 25px 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* 3. ULTRA SMALL SCREEN  */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+}
