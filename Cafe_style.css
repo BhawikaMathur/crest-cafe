@@ -490,10 +490,12 @@ footer p {
     }
 
     .hero-content {
-        position: relative;
+       position: relative;
         right: auto;
         left: auto;
         top: auto;
+        margin: 0 auto;
+        text-align: center;
         padding: 60px 20px;
     }
 
